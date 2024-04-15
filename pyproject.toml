@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "developer-toolkit"
+version = "0.1.0"
+description = "Based on our discussions regarding the Multi-Purpose API Toolkit, we've identified key features and requirements that will guide the development process. The toolkit, designed to serve a myriad of functionalities within a single endpoint, eliminates the need for integrating multiple third-party services. Here are the detailed insights gathered from our interview sessions: "
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+pyjwt = "^2.5.0"
+fastapi = "^0.78.0"
+httpx = "^0.23.0"
+passlib = {version = "^1.7.4", extras = ["bcrypt"]}
+prisma = "*"
+pydantic = "*"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
